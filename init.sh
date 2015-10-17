@@ -8,7 +8,7 @@ if [ ! -f server.cfg-private ]; then
   exit 1
 fi
 
-chmod +x samp03svr samp-npc announce server.sh
+chmod +x samp03svr samp-npc announce start.sh
 
 if [ ! -d data ]; then
   ln -s ../playground/data data
