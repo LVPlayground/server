@@ -8,6 +8,7 @@ This guide assumes that the server has been checked out as part of the following
     git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
     git clone https://github.com/LVPlayground/echo-plugin.git
     git clone https://github.com/LVPlayground/json-plugin.git
+    git clone https://github.com/LVPlayground/mysql-plugin.git
     git clone https://github.com/LVPlayground/playground.git
     git clone https://github.com/LVPlayground/playgroundjs-plugin.git
     git clone https://github.com/samp-incognito/samp-streamer-plugin.git

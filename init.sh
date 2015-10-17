@@ -26,7 +26,10 @@ if [ ! -f plugins/json-plugin.so ]; then
   ln ../json-plugin/src/out/json-plugin.so plugins/json-plugin.so
 fi
 
-# TODO: mysql-plugin.so
+# TODO(Russell): Get a working Linux compile of the MySQL plugin.
+if [ ! -f plugins/mysql-plugin.so ]; then
+  ln ../mysql-plugin.so plugins/mysql-plugin.so
+fi
 
 if [ ! -f plugins/playgroundjs-plugin.so ]; then
   ln ../playgroundjs-plugin/src/out/playgroundjs-plugin.so plugins/playgroundjs-plugin.so
