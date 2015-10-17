@@ -1,5 +1,6 @@
 data
 javascript
+libv8.so
 server.cfg
 server.cfg-private
 server_log.txt
