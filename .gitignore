@@ -1,6 +1,9 @@
+logs/
 data
 javascript
 libv8.so
+nohup.out
 server.cfg
 server.cfg-private
+server.pid
 server_log.txt
