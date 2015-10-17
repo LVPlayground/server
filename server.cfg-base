@@ -8,13 +8,13 @@ maxplayers 50
 maxnpc 0
 
 language English
-port 1337
-rcon_password testserverpwd
+port ${PORT}
+rcon_password ${RCON_PASSWORD}
 weburl sa-mp.nl
 
 gamemode0 lvp 1
 plugins playgroundjs-plugin.so echo-plugin.so json-plugin.so mysql-plugin.so zone-manager-plugin.so streamer.so
-hostname Las Venturas Playground
+hostname ${TITLE}
 
 logtimeformat [%H:%M:%S]
 
