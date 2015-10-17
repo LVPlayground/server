@@ -3,11 +3,17 @@ echo Initializing LVP Production server...
 announce 1
 chatlogging 1
 lanmode 0
+output 1
+rcon 0
 
-maxplayers 50
-maxnpc 0
+maxplayers 135
+maxnpc 20
 
-language English
+conncookies 0
+die_on_error 0
+lagcompmode 1
+
+language All
 port ${PORT}
 rcon_password ${RCON_PASSWORD}
 weburl sa-mp.nl
@@ -18,8 +24,8 @@ hostname ${TITLE}
 
 logtimeformat [%H:%M:%S]
 
-onfoot_rate 40
-incar_rate 40
-weapon_rate 40
-stream_distance 300.0
-stream_rate 1000
+onfoot_rate 32
+incar_rate 32
+weapon_rate 32
+stream_distance 500.0
+stream_rate 500
