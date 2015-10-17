@@ -56,4 +56,4 @@ eval "echo \"$(< server.cfg-base)\"" > server.cfg
 echo > server_log.txt
 
 echo "The LVP server has been initialized. You can now run it using:"
-echo "$ ./server.sh"
+echo "$ ./start.sh"
