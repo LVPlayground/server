@@ -3,18 +3,18 @@
 # Use of this source code is governed by the MIT license, a copy of which can
 # be found in the LICENSE file.
 
-chmod +x samp03svr samp-npc announce
-
 if [ ! -f server.cfg-private ]; then
   echo "You must have a server.cfg-private file to initialize the LVP server."
-  exit
+  exit 1
 fi
 
-if [ ! -f data ]; then
+chmod +x samp03svr samp-npc announce server.sh
+
+if [ ! -d data ]; then
   ln -s ../playground/data data
 fi
 
-if [ ! -f data ]; then
+if [ ! -d data ]; then
   ln -s ../playground/javascript javascript
 fi
 
@@ -32,7 +32,7 @@ if [ ! -f plugins/playgroundjs-plugin.so ]; then
   ln ../playgroundjs-plugin/src/out/playgroundjs-plugin.so plugins/playgroundjs-plugin.so
 fi
 
-if [ ! -f plugins/libv8.so ]; then
+if [ ! -f libv8.so ]; then
   ln ../playgroundjs-plugin/src/out/libv8.so libv8.so
 fi
 
@@ -48,3 +48,6 @@ fi
 source server.cfg-private
 
 eval "echo \"$(< server.cfg-base)\"" > server.cfg
+
+echo "The LVP server has been initialized. You can now run it using:"
+echo "$ ./server.sh"
