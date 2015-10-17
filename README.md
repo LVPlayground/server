@@ -40,6 +40,6 @@ server's actual configuration files for you.
 ## Running the server
 Due to the way the [PlaygroundJS plugin](https://github.com/LVPlayground/playgroundjs-plugin) has
 been compiled, the `LD_LIBRARY_PATH` environment variable must be set. This has been wrapped in
-the [server.sh](server.sh) script. Run the server by executing:
+the [start.sh](start.sh) script. Run the server by executing:
 
-    ./server.sh
+    ./start.sh

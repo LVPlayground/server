@@ -5,7 +5,7 @@
 
 # This script should be run on the server every minute using the following crontab:
 #
-#     * * * * * /usr/bin/nohup /home/jcmp/Server/start.sh > /dev/null 2>&1
+#     * * * * * /usr/bin/nohup /path/to/server/start.sh > /dev/null 2>&1
 #
 # It will do all the necessary checks, detect whether a SA-MP server is running under the current
 # UID and, if it isn't, rotate the log files and start the server.
@@ -38,7 +38,7 @@ if [[ $EUID -ne 0 ]]; then
     /bin/echo Done!
     /bin/echo
     /bin/echo Starting the SA-MP server
-    /usr/bin/nohup ./samp03svr &
+    LD_LIBRARY_PATH=. /usr/bin/nohup ./samp03svr &
 
     # Small timeout to let the server start.
     /bin/sleep 3
