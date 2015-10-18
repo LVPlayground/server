@@ -14,7 +14,7 @@ if [ ! -d data ]; then
   ln -s ../playground/data data
 fi
 
-if [ ! -d data ]; then
+if [ ! -d javascript ]; then
   ln -s ../playground/javascript javascript
 fi
 
