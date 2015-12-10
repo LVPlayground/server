@@ -24,6 +24,10 @@ if [ ! -d logs ]; then
   mkdir logs
 fi
 
+if [ ! -d cores ]; then
+  mkdir cores
+fi
+
 if [[ $EUID -ne 0 ]]; then
   if [ "$(pgrep -U $EUID samp03svr)" ]
   then
@@ -31,6 +35,9 @@ if [[ $EUID -ne 0 ]]; then
   else
     /bin/echo Copying log files to the logs directory
     /bin/cp server_log.txt logs/server_log_`/bin/date +%G-%m-%d_%H_%M`.txt
+    if [ -f core ]; then
+      /bin/mv core cores/core_`/bin/date +%G-%m-%d_%H_%M`
+    fi
     /bin/echo Done!
     /bin/echo
     /bin/echo Clearing the current logfiles
