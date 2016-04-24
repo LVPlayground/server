@@ -6,6 +6,8 @@ lanmode 0
 output 1
 rcon 1
 
+logqueries 1
+
 maxplayers 135
 maxnpc 20
 
