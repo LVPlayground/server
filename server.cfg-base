@@ -25,7 +25,7 @@ filterscripts cake drop_radio
 plugins playgroundjs-plugin.so echo-plugin.so json-plugin.so mysql-plugin.so zone-manager-plugin.so streamer.so
 hostname ${TITLE}
 
-logtimeformat [%H:%M:%S]
+logtimeformat [%d/%m %H:%M:%S]
 
 onfoot_rate 40
 incar_rate 40
