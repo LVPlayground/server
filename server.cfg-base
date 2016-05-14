@@ -27,14 +27,8 @@ hostname ${TITLE}
 
 logtimeformat [%d/%m %H:%M:%S]
 
-onfoot_rate 40
-incar_rate 40
+onfoot_rate 50
+incar_rate 50
 weapon_rate 40
-stream_distance 300.0
+stream_distance 250.0
 stream_rate 1000
-
-ackslimit 5000
-messageholelimit 50000
-messagelimit 1000
-
-sleep 4
