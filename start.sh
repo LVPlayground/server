@@ -33,6 +33,18 @@ if [[ $EUID -ne 0 ]]; then
   then
     /bin/echo "Server is already running!" 2>&1
   else
+    if [ -z "$PS1" ]; then
+      read -p "Do you want to update the JavaScript code [Y/N]? " -n 1 -r
+      echo
+
+      if [[ $REPLY =~ ^[Yy]$ ]]
+      then
+        pushd ../playground/
+        git pull --rebase
+        popd
+      fi
+    fi
+
     /bin/echo Copying log files to the logs directory
     /bin/cp server_log.txt logs/server_log_`/bin/date +%G-%m-%d_%H_%M`.txt
     if [ -f core ]; then
