@@ -40,6 +40,7 @@ if [[ $EUID -ne 0 ]]; then
       if [[ $REPLY =~ ^[Yy]$ ]]
       then
         pushd ../playground/
+        git reset --hard
         git pull --rebase
         popd
       fi
