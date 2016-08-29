@@ -25,17 +25,8 @@ plugins playgroundjs-plugin.so echo-plugin.so json-plugin.so mysql-plugin.so zon
 hostname ${TITLE}
 
 logtimeformat [%d/%m %H:%M:%S]
-<<<<<<< HEAD
-
-onfoot_rate 50
-incar_rate 50
-weapon_rate 40
-stream_distance 250.0
-stream_rate 1000
 
 profiler_gamemodes lvp
 profile_filterscripts cake drop_radio
 profiler_outputformat html
 profiler_callgraph 1
-=======
->>>>>>> 92487ef3c8d6ffe90e15714b9024773c0673f7ef
