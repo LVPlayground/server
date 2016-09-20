@@ -55,6 +55,7 @@ if [[ $EUID -ne 0 ]]; then
     /bin/echo
     /bin/echo Clearing the current logfiles
     /bin/echo "" > server_log.txt
+    /bin/rm nohup.out
     /bin/echo Done!
     /bin/echo
     /bin/echo Starting the SA-MP server
