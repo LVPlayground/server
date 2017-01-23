@@ -38,6 +38,14 @@ if [ ! -f libv8.so ]; then
   ln -s ../playgroundjs-plugin/src/out/libv8.so libv8.so
 fi
 
+if [ ! -f libv8_libbase.so ]; then
+  ln -s ../playgroundjs-plugin/src/out/libv8_libbase.so libv8_libbase.so
+fi
+
+if [ ! -f libv8_libplatform.so ]; then
+  ln -s ../playgroundjs-plugin/src/out/libv8_libplatform.so libv8_libplatform.so
+fi
+
 if [ ! -f plugins/streamer.so ]; then
   ln -s ../../samp-streamer-plugin/bin/linux/Release/streamer.so plugins/streamer.so
 fi
