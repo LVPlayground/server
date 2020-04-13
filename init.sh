@@ -18,10 +18,6 @@ if [ ! -d javascript ]; then
   ln -s ../playground/javascript javascript
 fi
 
-if [ ! -f plugins/echo-plugin.so ]; then
-  ln -s ../../echo-plugin/src/out/echo-plugin.so plugins/echo-plugin.so
-fi
-
 if [ ! -f plugins/json-plugin.so ]; then
   ln -s ../../json-plugin/src/out/json-plugin.so plugins/json-plugin.so
 fi

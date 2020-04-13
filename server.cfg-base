@@ -21,7 +21,7 @@ weburl sa-mp.nl
 
 gamemode0 lvp 1
 filterscripts cake drop_radio
-plugins playgroundjs-plugin.so echo-plugin.so json-plugin.so mysql-plugin.so zone-manager-plugin.so streamer.so
+plugins playgroundjs-plugin.so json-plugin.so mysql-plugin.so zone-manager-plugin.so streamer.so
 hostname ${TITLE}
 
 logtimeformat [%d/%m %H:%M:%S]
