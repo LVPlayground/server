@@ -34,6 +34,10 @@ if [ ! -f plugins/playgroundjs-plugin.so ]; then
   ln -s ../../playgroundjs-plugin/src/out/playgroundjs-plugin.so plugins/playgroundjs-plugin.so
 fi
 
+if [ ! -f libchrome_zlib.so ]; then
+  ln -s ../playgroundjs-plugin/src/out/libchrome_zlib.so libchrome_zlib.so
+fi
+
 if [ ! -f libv8.so ]; then
   ln -s ../playgroundjs-plugin/src/out/libv8.so libv8.so
 fi
