@@ -46,6 +46,18 @@ if [ ! -f libv8_libplatform.so ]; then
   ln -s ../playgroundjs-plugin/src/out/libv8_libplatform.so libv8_libplatform.so
 fi
 
+if [ ! -f icudtl.dat ]; then
+  ln -s ../playgroundjs-plugin/src/out/icudtl.dat icudtl.dat
+fi
+
+if [ ! -f libicui18n.so ]; then
+  ln -s ../playgroundjs-plugin/src/out/libicui18n.so libicui18n.so
+fi
+
+if [ ! -f libicuuc.so ]; then
+  ln -s ../playgroundjs-plugin/src/out/libicuuc.so libicuuc.so
+fi
+
 if [ ! -f plugins/streamer.so ]; then
   ln -s ../../samp-streamer-plugin/bin/linux/Release/streamer.so plugins/streamer.so
 fi
